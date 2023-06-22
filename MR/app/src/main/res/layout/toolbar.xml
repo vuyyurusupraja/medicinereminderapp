@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffc0cb"
+    android:elevation="50dp">
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:foregroundGravity="left"
+        android:layout_toLeftOf="@+id/toolbar_title"
+        android:src="@drawable/img_1"></ImageView>
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="MEDICINE REMINDER"
+        android:textColor="#0147AB"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:background="#ffc0cb"
+        android:src="@drawable/baseline_more_vert_24"
+        />
+</RelativeLayout>

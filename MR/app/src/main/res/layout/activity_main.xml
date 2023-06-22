@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/bg">
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="130dp"
+            android:text="Register for account"
+            android:textColor="#ff0000"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:hint="Full Name"
+            android:textStyle="italic"
+            android:textColorHint="#000"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:hint="Email"
+            android:textStyle="italic"
+            android:textColorHint="#000"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:hint="Password"
+            android:textStyle="italic"
+            android:textColorHint="#000"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/phoneno"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:hint="Phone No"
+            android:layout_marginLeft="40dp"
+            android:textColorHint="#000"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender: "
+            android:layout_below="@+id/phoneno"
+            android:layout_marginLeft="40dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textColor="#000"
+            tools:ignore="MissingConstraints" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="205dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/g"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <RadioButton
+                android:id="@+id/m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="Male"
+                android:textStyle="italic"
+                android:textColor="#000"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints" />
+            <RadioButton
+                android:id="@+id/f"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="@color/white"
+                android:text="Female"
+                android:textStyle="italic"
+                android:textColor="#000"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+
+            android:backgroundTint="#fe48aa"
+            android:text="Register"
+            android:fontFamily="sans-serif-black"
+            android:textSize="17dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/gotologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:text="Already Registered?\n       Login here"
+            android:textColor="#ff0000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

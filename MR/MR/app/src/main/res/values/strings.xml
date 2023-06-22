@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MR</string>
+    <string name="dhint"><font size="15">double click</font></string>
+</resources>
